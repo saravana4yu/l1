@@ -70,7 +70,7 @@ function Sidebar() {
         </a>
         <div className="relative flex flex-col px-6 py-3">
           <div className="text-sm pb-4 font-bold text-gray-400">MAIN MENU</div>
-          <nav className="flex flex-col font-bold text-lg text-gray-500 items-start w-full space-y-6">
+          <nav className="flex flex-col font-bold text-lg text-gray-500 items-start w-full space-y-4">
             {mainMenus.map((menu, index) => (
               <div key={index} className="w-full">
                 {menu.dropdown ? (
@@ -90,7 +90,7 @@ function Sidebar() {
                       )}
                     </button>
                     {dropdowns[index] && (
-                      <div className="flex flex-col items-start w-full mt-4 space-y-6 py-0">
+                      <div className="flex flex-col items-start w-full mt-4 space-y-4 py-0">
                         {menu.items.map((subItem, subIndex) => (
                           <a
                             key={subIndex}
@@ -116,7 +116,7 @@ function Sidebar() {
             ))}
           </nav>
           <div className="text-sm pt-6 pb-4 font-bold text-gray-400">SUPPORT</div>
-          <nav className="flex flex-col font-bold text-lg text-gray-500 items-start w-full space-y-6">
+          <nav className="flex flex-col font-bold text-lg text-gray-500 items-start w-full space-y-4">
             {supports.map((support, index) => (
               <div key={index} className="w-full">
                 <a
