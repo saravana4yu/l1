@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react';
-import { TbChevronCompactLeft, TbChevronCompactRight } from "react-icons/tb";
+import { PiCaretRight, PiCaretLeft } from "react-icons/pi";
 import { AreaChart, Area, ResponsiveContainer } from 'recharts';
 import down from '../assets/Vector.svg';
 import up from '../assets/Vectord.svg';
@@ -97,7 +97,7 @@ function Indices() {
               onClick={prevSlide}
               className="bg-white p-2 shadow-lg rounded-full"
             >
-              <TbChevronCompactLeft />
+              <PiCaretLeft />
             </button>
           </div>
         )}
@@ -107,7 +107,7 @@ function Indices() {
               onClick={nextSlide}
               className="bg-white p-2 shadow-lg rounded-full"
             >
-              <TbChevronCompactRight />
+              <PiCaretRight />
             </button>
           </div>
         )}

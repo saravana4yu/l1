@@ -34,13 +34,13 @@ function TopMovers() {
           </div>
           {topMovers.map((topMover, i) => (
             <div key={i} className="flex flex-row h-[72px] pl-[16px] py-[24px] border-t-2">
-              <p className="font-semibold text-gray-700 w-[239px]">{topMover.name}</p>
+              <p className="font-semibold text-gray-700 w-[210px]">{topMover.name}</p>
               <div className={`flex items-center w-[86px] mr-2 ${topMover.change.startsWith('+') ?  'bg-green-100 rounded-xl w-24 h-6' : ' bg-red-100 rounded-xl w-24'}`}>
                 <img src={topMover.change.startsWith('+') ? up : down} alt="" className="h-3 w-3 mx-1" />
-                <p className={`text-sm font-semibold ${topMover.change.startsWith('+') ? 'text-green-600 ' : 'text-red-600 bg-red-100'}`}>{topMover.change}</p>
+                <p className={`text-sm font-semibold ${topMover.change.startsWith('+') ? 'text-green-500 ' : 'text-red-600 bg-red-100'}`}>{topMover.change}</p>
               </div>
-              <p className="font-semibold text-gray-500 w-[110.5px]">{topMover.value}</p>
-              <p className="font-semibold text-gray-500 w-[110.5px]">{topMover.cp}</p>
+              <p className="font-semibold text-gray-500 w-[110.5px] ml-7">{topMover.value}</p>
+              <p className="font-semibold text-gray-500 w-[110.5px] ml-3">{topMover.cp}</p>
             </div>
           ))}
         </div>

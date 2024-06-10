@@ -39,8 +39,8 @@ function Commodities() {
                   {currency.change}
                 </p>
               </div>
-              <p className="font-semibold text-gray-500 w-[139.33px]">{currency.expiry}</p>
-              <p className="font-semibold text-gray-500 w-[139.33px]">{currency.price}</p>
+              <p className="font-semibold text-gray-500 w-[139.33px] ml-5">{currency.expiry}</p>
+              <p className="font-semibold text-gray-500 w-[139.33px] ml-5">{currency.price}</p>
             </div>
           ))}
         </div>

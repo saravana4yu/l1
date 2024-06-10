@@ -4,6 +4,7 @@ import Logo from '../assets/Logomark.svg';
 import text from '../assets/Logotype.svg';
 import icon from '../assets/Icon.svg'
 import { TbFileDownload, TbMoneybag, TbLogout, TbDotsCircleHorizontal, TbMessageCircleQuestion, TbSettings2, TbBookmarkPlus, TbChartPie, TbCategoryFilled, TbClipboard, TbChevronCompactDown, TbChevronCompactUp, TbChevronCompactRight } from "react-icons/tb";
+import { PiCaretRight, PiCaretUp, PiCaretDown } from "react-icons/pi";
 
 function Sidebar() {
   const [dropdowns, setDropdowns] = useState({});
@@ -64,7 +65,7 @@ function Sidebar() {
                 <p>₹ 51,000</p>
               </div>
             </div>
-            <TbChevronCompactRight className="mt-4 mr-2 text-2xl text-gray-500" />
+            <PiCaretRight className="mt-4 mr-2 text-2xl text-gray-500" />
           </div>
         </a>
         <div className="relative flex flex-col px-6 py-3">
@@ -83,9 +84,9 @@ function Sidebar() {
                         <span className="text-lg">{menu.label}</span>
                       </div>
                       {dropdowns[index] ? (
-                        <TbChevronCompactUp className="mr-4 text-2xl transform transition-transform duration-200" />
+                        <PiCaretUp className="mr-4 text-2xl transform transition-transform duration-200" />
                       ) : (
-                        <TbChevronCompactDown className="mr-4 text-2xl transform transition-transform duration-200" />
+                        <PiCaretDown className="mr-4 text-2xl transform transition-transform duration-200" />
                       )}
                     </button>
                     {dropdowns[index] && (
